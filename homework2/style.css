@@ -107,8 +107,8 @@
 	}
 
 	#footer-circle {
-	width: 60px;
-	height: 60px;
+	width: 30px;
+	height: 30px;
 	margin-top: 7px;
 	animation-name: spin;
     animation-duration: 7000ms;
