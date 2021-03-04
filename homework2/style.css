@@ -1,8 +1,3 @@
-   @viewport {
-        width: device-width;
-        zoom: 1;
-}
-
 
 	body, h1, h2, h3, p, img, ul, li{
 		border:0; margin:0; padding:0;
@@ -110,6 +105,26 @@
 		text-align:center;
 		width:900px;
 	}
+
+	#footer-circle {
+	width: 60px;
+	height: 60px;
+	margin-top: 7px;
+	animation-name: spin;
+    animation-duration: 7000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 	.float-left{
 		float:left;	/* use this on an element (like an image) to make it float to the left of it's containing HTML element */
 		margin:0  10px 10px 0;
@@ -122,5 +137,35 @@
 	}
 	.clear{
 		clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
-	}	
-}}
+	}
+
+	                                                            /*  Mobile  changes.  */
+@media only screen and (max-width: 480px) {
+	div.content{
+		width: auto;
+	}
+
+    div.col-right {
+		float: none;
+		width: auto;
+		padding:0 10px;
+	}
+
+	div#separator {
+		border-bottom:1px solid #c3dce1;
+		padding:0 0 30px 15px;
+		margin: 0 10px;
+	}
+
+	div.sidebar-left {
+		width: auto;
+	}
+
+	div#footer {
+		width: auto;
+	}
+
+    .hide_mobile {
+        display: none;
+	}
+}
