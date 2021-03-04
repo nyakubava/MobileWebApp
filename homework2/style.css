@@ -144,7 +144,10 @@
 	div.content{
 		width: auto;
 	}
-
+           div#header{
+        width: auto;
+         }
+    
     div.col-right {
 		float: none;
 		width: auto;
