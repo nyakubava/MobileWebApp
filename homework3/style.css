@@ -1,0 +1,46 @@
+.mb-0 a:after {
+    font-family:Fontawesome;
+    content:'\f05a';
+    float:right;
+    font-size:20px;
+    font-weight:300;
+}
+.mb-0 a.collapsed:after {
+    font-family:Fontawesome;
+    content:'\f05a';
+}
+
+.mb-1 a:after {
+    font-family:Fontawesome;
+    content:'\f078';
+    float:right;
+    font-size:20px;
+    font-weight:300;
+}
+
+.mb-1 a.collapsed:after {
+    font-family:Fontawesome;
+    content:'\f077';
+}
+
+#heading, #heading-1, #heading-2, #heading-3{
+    background-color:#a2ebeb;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+	div.content{
+		width: auto;
+	}
+
+
+   .nav-item  {
+    font-size: 20px;
+}
+
+    .hide_mobile {
+        display: none;
+
+	}
+}
